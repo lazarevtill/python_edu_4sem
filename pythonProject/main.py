@@ -19,11 +19,11 @@ def onetwo(x):
 
 def onethree(n, m):
     ans1 = 0
-    for i in range(1, n):
+    for i in range(1, n+1):
         ans1 += (math.e ** i) + i - 36
     ans2 = 0
-    for i in range(1, n):
-        for j in range(1, m):
+    for i in range(1, n+1):
+        for j in range(1, m+1):
             ans2 += (57 * (i ** 8)) - (84 * (i ** 3))
     ans = (71 * ans1) + (21 * ans2)
     print(ans)
@@ -44,7 +44,7 @@ if __name__ == '__main__':
     # oneone(x)
     # onetwo(x)
 
-    # y = int(input())
-    # onethree(x, y)
+    y = int(input())
+    onethree(x, y)
 
-    print(onefour(x))
+    #print(onefour(x))
