@@ -1,23 +1,22 @@
 import math
 
 
-def oneone(x):
+def f11(x):
     ans = 27 * (x ** 5 + x ** 3) ** 2 + 57 * x ** 7 - (92 * x ** 7 - 66 * x ** 8) / (
             (x ** 4 / 42) - 4 * x ** 2 - 36) + math.tan(math.tan(x)) + 71 * x ** 6
-    print(ans)
+    return ans
 
-
-def onetwo(x):
+def f12(x):
     if x < -20:
         ans = 27 * (x ** 5 + x ** 3) ** 2 + 57 * x ** 7
     if -20 <= x < 67:
         ans = (x ** 3 / 33 + x ** 5 + 54) ** 8 - x ** 4 / 32
     if x >= 67:
         ans = 19 * (x ** 7 + 56 * x ** 5) + 19 * x ** 8
-    print(ans)
+    return ans
 
 
-def onethree(n, m):
+def f13(n, m):
     ans1 = 0
     for i in range(1, n+1):
         ans1 += (math.e ** i) + i - 36
@@ -26,10 +25,10 @@ def onethree(n, m):
         for j in range(1, m+1):
             ans2 += (57 * (i ** 8)) - (84 * (i ** 3))
     ans = (71 * ans1) + (21 * ans2)
-    print(ans)
+    return ans
 
 
-def onefour(n):
+def f14(n):
     ans = 0
     if n==0:
         return 3
