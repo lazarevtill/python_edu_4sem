@@ -92,7 +92,7 @@ def f22(number):
     g = number & 0b11111110000000000000000000000000
     print("g",bin(g))
     numb = (b << 30) | (d << 19) | (g >> 5) | (e << 5) | (c << 10) | (a << 11) | (f >> 14)
-    return bin(numb)
+    return bicn(numb)
 #
 #
 # def f23():
